@@ -1,9 +1,11 @@
+import { searchIconGrey } from '../../assets';
 import './style.css';
 
 const SearchInput = props => {
     return (
-        <div className="search-input-container">
-            <input />
+        <div className="search-input-container flex">
+            <img src={searchIconGrey} alt=""/>
+            <input placeholder="Find your music"/>
         </div>
     );
 }

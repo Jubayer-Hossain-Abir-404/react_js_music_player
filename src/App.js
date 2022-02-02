@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import SearchInput from './components/SearchInput';
+import Tabs from './components/Tabs';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         Find the best music for your code
       </h2>
       <SearchInput />
+      <Tabs />
     </div>
   );
 }

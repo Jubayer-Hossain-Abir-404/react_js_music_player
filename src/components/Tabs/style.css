@@ -1,0 +1,16 @@
+.tab-header > a{
+    /* Let all the flexible items be the same length, regardless of its content */
+    flex: 1;
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 2px solid grey;
+}
+
+
+.tab-header > a.active{
+    border-bottom: 1px solid #83c11f;
+}
