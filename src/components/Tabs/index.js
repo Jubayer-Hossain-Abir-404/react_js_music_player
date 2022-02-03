@@ -17,9 +17,16 @@ const Tabs = props =>{
 
             <div className="tab-contents">
                 <div className="tab-content" id="commercial">
-                    commercial
+                    <div className="content-wrapper flex justify-sb m-20">
+                        <div className="content-item">
+                            <img alt=""/>
+                        </div>
+                        <div className="content-item">
+                            <img alt=""/>
+                        </div>
+                    </div>
                 </div>
-                <div className="tab-content" id="commercial">
+                <div className="tab-content" id="freelicense">
                     freelicense
                 </div>
             </div>

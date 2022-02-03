@@ -1,4 +1,5 @@
 import './App.css';
+import AudioList from './components/AudioList';
 import Header from './components/Header';
 import SearchInput from './components/SearchInput';
 import Tabs from './components/Tabs';
@@ -12,6 +13,7 @@ function App() {
       </h2>
       <SearchInput />
       <Tabs />
+      <AudioList />
     </div>
   );
 }
