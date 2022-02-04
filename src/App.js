@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import SearchInput from "./components/SearchInput";
 import Tabs from "./components/Tabs";
 import "./App.css";
+import FixFooter from "./components/FixFooter";
 
 function App() {
   // here list is the current state
@@ -25,7 +26,9 @@ function App() {
       {/* here onBackButtonPress is being sent as a value */}
       {list && <AudioList onBackButtonPress={onBackButtonPress} />}
       {/* here setlist is being updated */}
-      <button onClick={() => setList(true)}>btn</button>
+      {/* <button onClick={() => setList(true)}>btn</button> */}
+
+      <FixFooter />
     </div>
   );
 }

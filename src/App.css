@@ -109,3 +109,18 @@ body{
 li{
   list-style: none;
 }
+
+.d-visibility{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  /* The opacity property specifies 
+  the opacity/transparency of an 
+  element. */
+  opacity: 0.5;
+  /* to get the click */
+  z-index: -1;
+}

@@ -1,0 +1,50 @@
+.fix-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* here width is not required because
+    left and right here is already 0 */
+    /* width: 100%; */
+    padding: 10px;
+    background: grey;
+    background: url(./../../assets/footer-bg-1.jpg);
+    /* to ensure the center position of the image */
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /* height: 50px; */
+    transition: height .2s ease-out;
+}
+
+.fix-footer.active{
+    height: calc(100% - 40px);
+}
+
+.slide-up-btn{
+    width: 50px;
+    height: 5px;
+    background: grey;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.navigation-menu{
+    width: 160px;
+    background: #000;
+    border-radius: 5px;
+    /* it takes the element to to the
+    center */
+    margin: 5px auto;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.navigation-menu a{
+    font-size: 12px; 
+}
+
+.navigation-menu img{
+    width: 15px;
+}
