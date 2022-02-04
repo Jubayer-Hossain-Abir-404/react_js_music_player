@@ -1,22 +1,40 @@
 import { backIcon } from '../../assets';
 import './style.css';
 
-const AudioList = props => {
+
+// here onBackButtonPress was sent from
+// app.js as props value
+
+const AudioList = ({
+    onBackButtonPress
+}) => {
     return (
         <div className="audio-ls m-20">
-            <div className="audio-ls-header">
+            <div onClick={onBackButtonPress} className="audio-ls-header">
                 {/* AudioList */}
                 <img src={ backIcon } alt=""/>
             </div>
 
             <ul>
-                <li className="audio-ls-container">
-                    <div className="audio-ls-item">
+                <li className="audio-ls-container mtb-10">
+                    {/* flex makes both the item inline */}
+                    <div className="audio-ls-item flex align-center ptb-10">
                         <div className="audio-img">
                             <img src="" alt=""/>
                         </div>
-                        <div className="audio-info">
-                            
+                        <div className="audio-info mlr-10">
+                            <p>Beyond the line</p>
+                            <p>Rizwan Khan</p>
+                        </div>
+                    </div>
+
+                    <div className="audio-ls-item flex align-center">
+                        <div className="audio-img">
+                            <img src="" alt=""/>
+                        </div>
+                        <div className="audio-info mlr-10">
+                            <p>Beyond the line</p>
+                            <p>Rizwan Khan</p>
                         </div>
                     </div>
                 </li>

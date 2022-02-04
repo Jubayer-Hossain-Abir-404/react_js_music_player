@@ -13,3 +13,12 @@
     border-radius: 50%;
     background: grey;
 }
+
+.audio-info{
+    font-size: 12px;
+}
+
+/* to fetch the last child p of audio-info class */
+.audio-info p:last-child{
+    color: grey;
+}
