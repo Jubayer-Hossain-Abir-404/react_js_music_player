@@ -105,3 +105,7 @@ body{
 .app-quote{
   font-size: 25px;
 }
+
+li{
+  list-style: none;
+}
