@@ -6,7 +6,7 @@
     /* here width is not required because
     left and right here is already 0 */
     /* width: 100%; */
-    padding: 10px;
+    padding: 10px 20px;
     background: grey;
     background: url(./../../assets/footer-bg-1.jpg);
     /* to ensure the center position of the image */
@@ -47,4 +47,34 @@
 
 .navigation-menu img{
     width: 15px;
+}
+
+/* meaning inside mini-player that is .artist-cover-img */
+.mini-player .artist-cover-img{
+    width: 40px;
+    height: 40px;
+    background: grey;
+    border-radius: 50%;
+}
+
+.mini-player-control button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.mini-player button img{
+    width: 15px;
+}
+
+.mini-player button:first-child{
+    margin-right: 10px;
+}
+
+.mini-player-info{
+    font-size: 12px;
+}
+
+.mini-player-info p:last-child{
+    color: grey;
 }

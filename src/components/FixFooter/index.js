@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { homeIcon, userIcon } from '../../assets';
+import { closeIcon, homeIcon, playGreyIcon, userIcon } from '../../assets';
 import './style.css';
 
 const FixFooter = props => {
@@ -15,21 +15,29 @@ const FixFooter = props => {
 
             <div className="d-visibility"></div>
 
-            <div className="mini-player">
-                <div>
+            <div className="mini-player flex justify-sb align-center">
+                <div className="flex">
                     <div className="artist-cover-img">
                         <img alt=""/>
                     </div>
-                    <div>
+                    <div className="mini-player-info mlr-10">
                         <p>Beyond the line</p>
                         <p>Rizwan Khan</p>
                     </div>
+                </div>
+                <div className="mini-player-control flex">
+                    <button>
+                        <img src={playGreyIcon} alt=""/>
+                    </button>
+                    <button>
+                        <img src={closeIcon} alt=""/>
+                    </button>
                 </div>
             </div>
 
             {/* navigation menu */}
             <div className="navigation-menu flex justify-evenly">
-                <a>
+                <a href="#home">
                     <div>
                         <img src={homeIcon} alt="" />
                     </div>
@@ -38,7 +46,7 @@ const FixFooter = props => {
                     </div>
                 </a>
 
-                <a>
+                <a href="#profile">
                     <div>
                         <img src={userIcon} alt="" />
                     </div>

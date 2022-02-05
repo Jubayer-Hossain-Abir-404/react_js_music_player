@@ -3,6 +3,9 @@ import searchIconGrey from "./search-icon-666.png";
 import backIcon from "./back.png";
 import homeIcon from "./menu/home.png";
 import userIcon from "./menu/user.png";
+import playGreyIcon from "./play.png";
+import pauseGreyIcon from "./pause.png";
+import closeIcon from "./close.png";
 
 
 
@@ -11,5 +14,8 @@ export{
     searchIconGrey,
     backIcon,
     homeIcon,
-    userIcon
+    userIcon,
+    playGreyIcon,
+    pauseGreyIcon,
+    closeIcon
 }
