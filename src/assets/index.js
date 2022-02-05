@@ -6,6 +6,10 @@ import userIcon from "./menu/user.png";
 import playGreyIcon from "./play.png";
 import pauseGreyIcon from "./pause.png";
 import closeIcon from "./close.png";
+import playBlackIcon from "./play-black.png";
+import pauseBlackIcon from "./pause-black.png";
+import nextIcon from "./next.png";
+import prevIcon from "./next.png";
 
 
 
@@ -17,5 +21,9 @@ export{
     userIcon,
     playGreyIcon,
     pauseGreyIcon,
-    closeIcon
+    closeIcon,
+    playBlackIcon,
+    pauseBlackIcon,
+    nextIcon,
+    prevIcon
 }

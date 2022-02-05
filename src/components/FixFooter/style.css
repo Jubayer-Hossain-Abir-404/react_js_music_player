@@ -78,3 +78,83 @@
 .mini-player-info p:last-child{
     color: grey;
 }
+
+.audio-player-lg .audio-cover-lg-img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #fff;
+    /* here auto is the secret sauce
+    which brings the content in the middle */
+    margin: 20px auto;
+}
+
+.audio-player-lg .audio-cover-lg-img img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* this translates image to 50% left
+    and 50% to top */
+    transform: translate(-50%, -50%);
+    background: grey;
+}
+
+.audio-player-progress{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.audio-player-progress input[type=range]{
+    width: 100%;
+    -webkit-appearnace: none;
+    height: 2px;
+    border-radius: 2px;
+    /* linear gradient can only be 
+    applied to background-image */
+    background: linear-gradient(to right, #ffffff 50%, grey 50%);
+}
+
+.audio-controls{
+    width: 180px;
+    margin: 0 auto;
+}
+
+.audio-controls button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+/* It will target elements which are DIRECT 
+children of a particular element */
+.audio-controls button > first-child{
+    /* this is used to rotate the 
+    audio control */
+    transform: scaleX(-1);
+}
+
+.audio-controls .play-pause-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.audio-controls .play-pause-button img{
+    width: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.anchor-style{
+    text-decoration: none;
+    color: white;
+}
+
